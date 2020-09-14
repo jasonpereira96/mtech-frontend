@@ -1,14 +1,10 @@
 ## Instructions
 
-clone the repo
+1. Clone the repo
+2. Then, in the repo root folder run `npm install` to install the dependencies.
+3. To start the front end, run `npm start` in the root directory.
 
-Then, in the repo root folder run `npm install` to install the dependencies.
-There are many.
-
-
-to start the front end, run `npm start` in the root directory.
-
-
+## Build process
 This project cannot be served on nginx as it is.
 
 You'll have to build it first using:
