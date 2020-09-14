@@ -1,3 +1,29 @@
+## Instructions
+
+clone the repo
+
+Then, in the repo root folder run `npm install` to install the dependencies.
+There are many.
+
+
+to start the front end, run `npm start` in the root directory.
+
+
+This project cannot be served on nginx as it is.
+
+You'll have to build it first using:
+`npm run build`
+
+Once you run this, it will generate a build folder.
+
+Configure nginx to serve `index.html` and other files from that folder.
+
+That will function as your frontend.
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
