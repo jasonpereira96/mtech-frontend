@@ -7,9 +7,17 @@ import {
 import {
     TableFilterRow,
 } from '@devexpress/dx-react-grid-material-ui';
-
+import { IntegratedSorting, SortingState } from '@devexpress/dx-react-grid';
 import { LinearProgress } from '@material-ui/core';
 import { debounce } from './../utils/utils';
+import {
+    SummaryState,
+    IntegratedSummary,
+} from '@devexpress/dx-react-grid';
+import {
+    TableSummaryRow,
+} from '@devexpress/dx-react-grid-material-ui';
+import { VirtualTable } from '@devexpress/dx-react-grid-material-ui';
 
 
 
@@ -38,6 +46,14 @@ class DataGrid extends React.Component {
     render() {
         let { rows } = this.state;
         let { columns } = this.props;
+        let filteringStateColumnExtensions = [{
+            columnName: 'id', filteringEnabled: false
+        }, {
+            columnName: 'cgpa', filteringEnabled: false
+        }];
+        let totalSummaryItems = [{
+            columnName: 'id', type: 'count'
+        }];
 
         return (
             <div className="datagrid">
@@ -45,10 +61,19 @@ class DataGrid extends React.Component {
                     <Grid
                         rows={rows}
                         columns={columns}>
-                        <FilteringState defaultFilters={[]} onFiltersChange={this.setFilters} />
+                        <FilteringState defaultFilters={[]} onFiltersChange={this.setFilters}
+                            columnExtensions={filteringStateColumnExtensions} />
+                        <SortingState defaultSorting={[{ columnName: 'id', direction: 'asc' }]} />
+                        <IntegratedSorting />
+                        <SummaryState
+                            totalItems={totalSummaryItems}
+                        />
+                        <IntegratedSummary />
                         <Table />
-                        <TableHeaderRow />
+                        <VirtualTable />
+                        <TableHeaderRow showSortingControls />
                         <TableFilterRow />
+                        <TableSummaryRow />
                     </Grid>
                     {this.state.loading && <LinearProgress />}
                 </Paper>
