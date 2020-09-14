@@ -26,7 +26,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className='App'>
-				<Header onHostnameChanged={this.onHostnameChanged.bind(this)}></Header>
+				<Header onHostnameChanged={this.onHostnameChanged.bind(this)} hostname={this.state.hostname}></Header>
 				<DataGrid rows={rows} columns={columns} serverHostname={this.state.hostname}></DataGrid>
 			</div>
 		);

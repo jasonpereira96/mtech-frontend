@@ -10,6 +10,11 @@ class Header extends React.Component {
                 <input type='text' id='host-input'></input>
                 &nbsp;
                 <button type='button' value='Set Host' onClick={this.onButtonClicked.bind(this)}>Set Host</button>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <label>Current Hostname: {this.props.hostname}</label>
             </div>
         )
     }
@@ -21,4 +26,4 @@ class Header extends React.Component {
         // alert(`hostname changed to: ${newHostname}`);
     }
 }
-export default Header;
+export default Header;  
