@@ -7,8 +7,7 @@
 ## Build process
 This project cannot be served on nginx as it is.
 
-You'll have to build it first using:
-`npm run build`
+You'll have to build it first using: `npm run build` in the root directory
 
 Once you run this, it will generate a build folder.
 
