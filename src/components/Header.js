@@ -4,7 +4,7 @@ class Header extends React.Component {
     render() {
         return (
             <div className='header'>
-                <h2>Students Database</h2>
+                <h1>Students Database</h1>
                 <label>App Server Hostname:</label>
                 &nbsp;
                 <input type='text' id='host-input'></input>

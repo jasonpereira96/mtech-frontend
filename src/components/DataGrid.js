@@ -103,7 +103,7 @@ class DataGrid extends React.Component {
                     setLastQuery(queryString);
                 })
                 .catch((a, b, c) => {
-                    setLoading(false)
+                    setLoading(false);
                 });
             setLastQuery(queryString);
         }
