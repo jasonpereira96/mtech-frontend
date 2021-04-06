@@ -13,7 +13,89 @@ const columns = [
 	{ name: 'degree', title: 'Degree' },
 	{ name: 'year', title: 'Year' }
 ];
-const rows = [];
+const rows = [
+	{
+	  "id": 1,
+	  "name": "Anisha Desai",
+	  "branch": "Electronics",
+	  "cgpa": 9.8,
+	  "address": "Borivali",
+	  "degree": "MTECH",
+	  "phone": "1234568563",
+	  "year": "2021"
+	},
+	{
+	  "id": 2,
+	  "name": "Daniel D’Silva",
+	  "branch": "Electronics",
+	  "cgpa": 8.8,
+	  "address": "Andheri",
+	  "degree": "MTECH",
+	  "phone": "45612382550",
+	  "year": "2021"
+	},
+	{
+	  "id": 3,
+	  "name": "Prajna Kotian",
+	  "branch": "Electronics",
+	  "cgpa": 8.8,
+	  "address": "Andheri",
+	  "degree": "MTECH",
+	  "phone": "45612382550",
+	  "year": "2021"
+	},
+	{
+	  "id": 4,
+	  "name": "Sagnik Mukherjee",
+	  "branch": "Electronics",
+	  "cgpa": 8.8,
+	  "address": "Andheri",
+	  "degree": "MTECH",
+	  "phone": "45612382550",
+	  "year": "2021"
+	},
+	{
+	  "id": 5,
+	  "name": "Surya Prakash",
+	  "branch": "Electronics",
+	  "cgpa": 8.8,
+	  "address": "Andheri",
+	  "degree": "MTECH",
+	  "phone": "45612382550",
+	  "year": "2021"
+	},
+	{
+	  "id": 6,
+	  "name": "Sahil Shelar",
+	  "branch": "Electronics",
+	  "cgpa": 8.8,
+	  "address": "Andheri",
+	  "degree": "MTECH",
+	  "phone": "45612382550",
+	  "year": "2021"
+	},
+	{
+	  "id": 7,
+	  "name": "Vishal Ramane",
+	  "branch": "Electronics",
+	  "cgpa": 8.8,
+	  "address": "Andheri",
+	  "degree": "MTECH",
+	  "phone": "45612382550",
+	  "year": "2021"
+	},
+	{
+	  "id": 8,
+	  "name": "Dayanand Ambawade",
+	  "branch": "Electronics",
+	  "cgpa": 10,
+	  "address": "Andheri",
+	  "degree": "MTECH",
+	  "phone": "45612382550",
+	  "year": "2021"
+  }
+  ]
+  
 
 
 class App extends React.Component {
